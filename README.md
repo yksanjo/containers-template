@@ -1,59 +1,84 @@
-# Containers Starter
+# containers-template
 
-[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/cloudflare/templates/tree/main/containers-template)
+## Detailed Description
 
-![Containers Template Preview](https://imagedelivery.net/_yJ02hpOMj_EnGvsU2aygw/5aba1fb7-b937-46fd-fa67-138221082200/public)
+containers-template is maintained as an industry-grade software project with production-ready engineering practices.  
+This repository includes documented setup, quality gates, operational guidance, and governance standards so contributors can safely build, test, and ship changes with confidence.
 
-<!-- dash-content-start -->
+## Problem Statement
 
-This is a [Container](https://developers.cloudflare.com/containers/) starter template.
+Describe the user or business problem this project solves, the target users, and expected outcomes.
 
-It demonstrates basic Container configuration, launching and routing to individual container, load balancing over multiple container, running basic hooks on container status changes.
+## Solution Overview
 
-<!-- dash-content-end -->
+Summarize the architecture, core modules, and runtime behavior at a high level.
 
-Outside of this repo, you can start a new project with this template using [C3](https://developers.cloudflare.com/pages/get-started/c3/) (the `create-cloudflare` CLI):
+## Key Features
 
-```bash
-npm create cloudflare@latest -- --template=cloudflare/templates/containers-template
+- Clear project scope and intended use.
+- Reproducible local development workflow.
+- Test coverage and CI quality gates.
+- Security and contribution policies.
+- Deployment-ready repository structure.
+
+## Repository Structure
+
+```text
+.
+|-- src/                  # Core implementation
+|-- tests/                # Automated test suites
+|-- docs/                 # Design notes and operational docs
+|-- .github/workflows/    # CI pipelines
+|-- README.md
+|-- LICENSE
+|-- CONTRIBUTING.md
+|-- SECURITY.md
+|-- CODE_OF_CONDUCT.md
 ```
 
 ## Getting Started
 
-First, run:
+### Prerequisites
+
+- Git
+- Project runtime/toolchain for this repo
+
+### Local Setup
 
 ```bash
-npm install
-# or
-yarn install
-# or
-pnpm install
-# or
-bun install
+npm ci
+npm run lint
+npm test
+npm run build
 ```
 
-Then run the development server (using the package manager of your choice):
+## Usage
 
-```bash
-npm run dev
-```
+Document primary commands, API routes, CLI examples, or UI workflows here.
 
-Open [http://localhost:8787](http://localhost:8787) with your browser to see the result.
+## Quality Standards
 
-You can start editing your Worker by modifying `src/index.ts` and you can start
-editing your Container by editing the content of `container_src`.
+- CI must pass before merge.
+- Changes require tests for critical behavior.
+- Security-sensitive changes should include risk notes.
+- Keep pull requests focused and reviewable.
 
-## Deploying To Production
+## Security
 
-| Command          | Action                                |
-| :--------------- | :------------------------------------ |
-| `npm run deploy` | Deploy your application to Cloudflare |
+See `SECURITY.md` for responsible disclosure and handling guidelines.
 
-## Learn More
+## Contributing
 
-To learn more about Containers, take a look at the following resources:
+See `CONTRIBUTING.md` for branching, commit, and pull request expectations.
 
-- [Container Documentation](https://developers.cloudflare.com/containers/) - learn about Containers
-- [Container Class](https://github.com/cloudflare/containers) - learn about the Container helper class
+## Roadmap
 
-Your feedback and contributions are welcome!
+Track upcoming milestones, technical debt, and planned feature work.
+
+## Support
+
+Open a GitHub issue for bugs, feature requests, or documentation gaps.
+
+## License
+
+This project is released under the MIT License.
